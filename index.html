@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover" />
+  <title>美食小餐厅（开源轻量版）</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Phaser CDN（纯静态，无需打包） -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+</head>
+<body>
+  <div id="ui">
+    <div class="pill">
+      💰 <span id="coins">0</span>　|　🍕 库存 <span id="pizza">0</span>
+    </div>
+    <div class="buttons">
+      <button id="cookBtn">在炉子做披萨</button>
+      <button id="serveBtn">给最近顾客上菜</button>
+      <button id="buildBtn">🧱 建造模式</button>
+      <button id="saveBtn">💾 手动存档</button>
+      <button id="resetBtn">🗑️ 清空存档</button>
+    </div>
+    <div class="hint">提示：点击「建造模式」后在地面点击即可放下新餐桌；再次点「建造模式」退出。</div>
+  </div>
+  <div id="game"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
