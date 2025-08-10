@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0; height: 100%; background: #f4f7ff; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",PingFang SC,Microsoft YaHei,Inter,Roboto,Helvetica,Arial,sans-serif;
+}
+#game { width: 100%; height: calc(100vh - 140px); }
+
+#ui {
+  position: relative; width: 100%; padding: 12px 16px 8px;
+  background: linear-gradient(180deg,#ffffff,#f6f8ff);
+  box-shadow: 0 1px 0 rgba(0,0,0,.05);
+}
+.pill {
+  display: inline-block; background: #111827; color: #fff; border-radius: 999px;
+  padding: 6px 12px; font-weight: 600; font-size: 14px;
+}
+.buttons { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+button {
+  appearance: none; border: 0; outline: none; cursor: pointer;
+  padding: 10px 12px; border-radius: 10px; font-weight: 600; font-size: 14px;
+  background: #2563eb; color: white; box-shadow: 0 6px 14px rgba(37,99,235,.15);
+}
+button:hover { filter: brightness(1.05); }
+button:active { transform: translateY(1px); }
+.hint { margin-top: 8px; color: #6b7280; font-size: 13px; }
+@media (max-width: 640px){
+  #game { height: calc(100vh - 170px); }
+  button { font-size: 13px; padding: 9px 10px; }
+}
